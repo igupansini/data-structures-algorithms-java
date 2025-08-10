@@ -60,7 +60,29 @@ public class LinkedList {
     }
 
     public void remove(String value) {
+        Node current = this.first;
+        Node previous = null;
 
+        for (int i = 0; i < this.getSize(); i++) {
+            if (current.getValue().equalsIgnoreCase(value)) {
+                if (current == this.first && current == this.last) {
+                    this.first = null;
+                    this.last = null;
+                } else if (current == this.first) {
+                    this.first = current.getNext();
+                    current.setNext(null);
+                } else if (current == this.last) {
+                    this.last = previous;
+                    previous.setNext(null);
+                } else {
+                    previous.setNext(current.getNext());
+                }
+                this.size--;
+                break;
+            }
+            previous = current;
+            current = current.getNext();
+        }
     }
 
     @Override
