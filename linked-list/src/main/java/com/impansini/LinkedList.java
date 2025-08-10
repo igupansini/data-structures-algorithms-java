@@ -85,6 +85,10 @@ public class LinkedList<TYPE> {
         }
     }
 
+    public Iterator<TYPE> iterator() {
+        return new Iterator<>(this.first);
+    }
+
     @Override
     public String toString() {
         return "LinkedList{" +

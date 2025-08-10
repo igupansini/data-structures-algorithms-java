@@ -68,5 +68,24 @@ public class Main {
         end = System.currentTimeMillis();
         System.out.println((end - start) + "ms for LinkedList add");
 
+        start = System.currentTimeMillis();
+
+        for (int i = 0; i < arrayList.size(); i++) {
+            arrayList.get(i);
+        }
+
+        end = System.currentTimeMillis();
+        System.out.println((end - start) + "ms for ArrayList get");
+
+        start = System.currentTimeMillis();
+        Iterator<Integer> iterator = linkedList.iterator();
+
+        while (iterator.hasNext()) {
+            iterator.next();
+        }
+
+        end = System.currentTimeMillis();
+        System.out.println((end - start) + "ms for LinkedList Iterator");
+
     }
 }
