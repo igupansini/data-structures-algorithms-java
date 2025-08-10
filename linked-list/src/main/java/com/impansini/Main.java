@@ -1,5 +1,7 @@
 package com.impansini;
 
+import java.util.ArrayList;
+
 public class Main {
     public static void main(String[] args) {
         LinkedList<String> stringLinkedList = new LinkedList<>();
@@ -41,5 +43,30 @@ public class Main {
         integerLinkedList.remove(2);
 
         System.out.println(integerLinkedList.getSize());
+
+        //comparison between linked list and array list starts below
+        LinkedList<Integer> linkedList = new LinkedList<>();
+        ArrayList<Integer> arrayList = new ArrayList<>();
+
+        int size = 1000000;
+        long start = System.currentTimeMillis();
+        long end = 0;
+
+        for (int i = 0; i < size; i++) {
+            arrayList.add(i);
+        }
+
+        end = System.currentTimeMillis();
+        System.out.println((end - start) + "ms for ArrayList add");
+
+        start = System.currentTimeMillis();
+
+        for (int i = 0; i < size; i++) {
+            linkedList.add(i);
+        }
+
+        end = System.currentTimeMillis();
+        System.out.println((end - start) + "ms for LinkedList add");
+
     }
 }
