@@ -1,8 +1,8 @@
 package com.impansini;
 
-public class LinkedList {
-    private Node first;
-    private Node last;
+public class LinkedList<TYPE> {
+    private Node<TYPE> first;
+    private Node<TYPE> last;
     private int size;
 
     public LinkedList() {
@@ -19,24 +19,24 @@ public class LinkedList {
         this.size = size;
     }
 
-    public Node getFirst() {
+    public Node<TYPE> getFirst() {
         return first;
     }
 
-    public void setFirst(Node first) {
+    public void setFirst(Node<TYPE> first) {
         this.first = first;
     }
 
-    public Node getLast() {
+    public Node<TYPE> getLast() {
         return last;
     }
 
-    public void setLast(Node last) {
+    public void setLast(Node<TYPE> last) {
         this.last = last;
     }
 
-    public void add(String value) {
-        Node newNode = new Node(value);
+    public void add(TYPE value) {
+        Node<TYPE> newNode = new Node<>(value);
 
         if (this.first == null && this.last == null) {
             this.first = newNode;
@@ -48,8 +48,8 @@ public class LinkedList {
         this.size++;
     }
 
-    public Node get(int index) {
-        Node current = this.first;
+    public Node<TYPE> get(int index) {
+        Node<TYPE> current = this.first;
 
         for (int i = 0; i < index; i++) {
             if (current.getNext() != null) {
@@ -59,12 +59,12 @@ public class LinkedList {
         return current;
     }
 
-    public void remove(String value) {
-        Node current = this.first;
-        Node previous = null;
+    public void remove(TYPE value) {
+        Node<TYPE> current = this.first;
+        Node<TYPE> previous = null;
 
         for (int i = 0; i < this.getSize(); i++) {
-            if (current.getValue().equalsIgnoreCase(value)) {
+            if (current.getValue().equals(value)) {
                 if (current == this.first && current == this.last) {
                     this.first = null;
                     this.last = null;
