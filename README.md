@@ -23,3 +23,12 @@ Binary search is an efficient algorithm for finding an element in a **ordered ar
 4. Repeat until the search is found or all possibilities are exhausted.
 
 Binary search splits the search space with each iteration, making it very fast for large arrays (complexity O(log n)).
+
+
+### bubble sort
+Bubble Sort is a simple sorting algorithm that iterates through an array multiple times, comparing adjacent elements and swapping them if they're in the wrong order. This process repeats until the array is ordered.
+
+For each element, it compares it with all the following elements and swaps it if necessary. The largest value "bubbles" to the end of the array with each pass.
+
+- Advantages: Easy to understand and implement.
+- Disadvantages: Inefficient for large data volumes (O(n²) complexity).
