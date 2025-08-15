@@ -52,3 +52,7 @@ Selection Sort is a simple sorting algorithm. It works like this:
 
 Each iteration, the smallest element of the unsorted part is moved to the correct position. The algorithm has O(n²) complexity because it uses two nested loops.
 
+### recursion
+Recursion is a programming technique where a function calls itself to solve a problem, breaking it down into smaller subproblems until it reaches a base case, which ends the recursive calls.
+
+The base case is the condition that ends the recursive calls. It defines when the function should stop calling itself, avoiding infinite loops. In the example, the base case occurs when index is no longer less than array.length; at that point, the function returns the accumulated value of sum and makes no further recursive calls.
