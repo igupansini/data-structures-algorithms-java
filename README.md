@@ -32,3 +32,12 @@ For each element, it compares it with all the following elements and swaps it if
 
 - Advantages: Easy to understand and implement.
 - Disadvantages: Inefficient for large data volumes (O(n²) complexity).
+
+
+### insertion sort
+Insertion Sort is a simple and efficient sorting algorithm for small data sets. It works by building a sorted list, one element at a time, inserting each new element in the correct position. (O(n²) complexity)
+
+1. Starts with the second element of the array.
+2. Compares the current element with the previous ones and inserts it in the correct position, shifting the larger ones forward.
+3. Repeat until the end of the array.
+
