@@ -41,3 +41,14 @@ Insertion Sort is a simple and efficient sorting algorithm for small data sets. 
 2. Compares the current element with the previous ones and inserts it in the correct position, shifting the larger ones forward.
 3. Repeat until the end of the array.
 
+
+### selection sort
+Selection Sort is a simple sorting algorithm. It works like this:
+
+1. Iterates through the array and finds the smallest element.
+2. It swaps this smallest element with the first element of the array.
+3. It repeats the process for the rest of the array (ignoring the first element already sorted).
+4. It continues until the entire array is sorted.
+
+Each iteration, the smallest element of the unsorted part is moved to the correct position. The algorithm has O(n²) complexity because it uses two nested loops.
+
