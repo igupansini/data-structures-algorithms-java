@@ -59,3 +59,13 @@ The base case is the condition that ends the recursive calls. It defines when th
 
 ### fibonacci
 The Fibonacci algorithm calculates the numbers in the Fibonacci sequence, where each number is the sum of the two previous numbers, starting with 0 and 1.
+
+### shell sort
+Shell Sort is an insertion-based sorting algorithm, but more efficient for large lists. It works by dividing the array into subgroups using a gap and sorting these subgroups. The gap progressively decreases until it reaches 1, at which point the algorithm behaves like a traditional Insertion Sort.
+
+1. Choose an initial gap, usually greater than 1.
+2. Sort elements that are separated by the gap.
+3. Reduce the gap and repeat the process.
+4. When the gap reaches 1, perform a final sort.
+
+- Faster than Insertion Sort for large arrays.
