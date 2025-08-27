@@ -69,3 +69,11 @@ Shell Sort is an insertion-based sorting algorithm, but more efficient for large
 4. When the gap reaches 1, perform a final sort.
 
 - Faster than Insertion Sort for large arrays.
+
+### heap sort
+Heap Sort is a sorting algorithm based on a structure called a heap (a type of binary tree). It works in two main steps:
+
+1. Heap construction: First, it transforms the array into a max-heap, where the largest element is at the root.
+2. Sort: It swaps the root (largest) element with the last element of the heap, reduces the heap size, and rebuilds the heap. This repeats until all elements are sorted.
+
+- Heap Sort has complexity O(n log n)
