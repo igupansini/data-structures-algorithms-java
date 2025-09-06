@@ -77,3 +77,10 @@ Heap Sort is a sorting algorithm based on a structure called a heap (a type of b
 2. Sort: It swaps the root (largest) element with the last element of the heap, reduces the heap size, and rebuilds the heap. This repeats until all elements are sorted.
 
 - Heap Sort has complexity O(n log n)
+
+### quick sort
+Quick Sort is an efficient sorting algorithm that uses a divide-and-conquer strategy. It works like this:
+
+1. Choose an element as the pivot.
+2. Rearrange the array so that all elements smaller than the pivot are on the left and larger ones on the right.
+3. Recursively, it applies the same process to the sublists to the left and right of the pivot.
