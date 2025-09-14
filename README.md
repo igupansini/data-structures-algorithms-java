@@ -84,3 +84,13 @@ Quick Sort is an efficient sorting algorithm that uses a divide-and-conquer stra
 1. Choose an element as the pivot.
 2. Rearrange the array so that all elements smaller than the pivot are on the left and larger ones on the right.
 3. Recursively, it applies the same process to the sublists to the left and right of the pivot.
+
+### queue
+
+A queue is a linear data structure that follows the FIFO (First-In, First-Out) principle, meaning the first element inserted is the first to be removed.
+
+- enqueue: Adds an element to the end of the queue.
+- dequeue: Removes the element from the front of the queue.
+- get or peek: Returns the element from the front of the queue without removing it.
+
+It is useful for managing first-come, first-served tasks, such as print queues.
