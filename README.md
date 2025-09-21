@@ -94,3 +94,11 @@ A queue is a linear data structure that follows the FIFO (First-In, First-Out) p
 - get or peek: Returns the element from the front of the queue without removing it.
 
 It is useful for managing first-come, first-served tasks, such as print queues.
+
+### stack
+
+A stack is a linear data structure that follows the LIFO (Last In, First Out) principle, meaning the last element inserted is the first to be removed.
+
+- push: adds an element to the top of the stack.
+- pop: removes and returns the top element.
+- get() or peek(): returns the top element without removing it.
