@@ -10,5 +10,14 @@ public class Main {
         tree.add(4);
         tree.add(6);
         tree.add(8);
+
+        System.out.println("In-order:");
+        tree.inOrder(tree.getRoot());
+
+        System.out.println("\nPre-order:");
+        tree.preOrder(tree.getRoot());
+
+        System.out.println("\nPost-order:");
+        tree.postOrder(tree.getRoot());
     }
 }

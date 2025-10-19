@@ -7,6 +7,10 @@ public class Tree<TYPE extends Comparable<TYPE>> {
         this.root = null;
     }
 
+    public Node<TYPE> getRoot() {
+        return root;
+    }
+
     public void add(TYPE value) {
         Node<TYPE> node = new Node<>(value);
         if (root == null) {
@@ -30,6 +34,30 @@ public class Tree<TYPE extends Comparable<TYPE>> {
                     }
                 }
             }
+        }
+    }
+
+    public void inOrder(Node<TYPE> current) {
+        if (current != null) {
+            inOrder(current.getLeft());
+            System.out.print(current.getValue() + " ");
+            inOrder(current.getRight());
+        }
+    }
+
+    public void preOrder(Node<TYPE> current) {
+        if (current != null) {
+            System.out.print(current.getValue() + " ");
+            preOrder(current.getLeft());
+            preOrder(current.getRight());
+        }
+    }
+
+    public void postOrder(Node<TYPE> current) {
+        if (current != null) {
+            postOrder(current.getLeft());
+            postOrder(current.getRight());
+            System.out.print(current.getValue() + " ");
         }
     }
 

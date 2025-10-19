@@ -102,3 +102,14 @@ A stack is a linear data structure that follows the LIFO (Last In, First Out) pr
 - push: adds an element to the top of the stack.
 - pop: removes and returns the top element.
 - get() or peek(): returns the top element without removing it.
+
+
+### binary tree
+
+A binary tree is a structure where each node has at most two children (left and right). In a binary search tree (BST), values ​​on the left are smaller than the node and on the right are larger. Traversals visit all nodes in different orders:
+
+- Pre-order: Visit the current node, then the left subtree, then the right subtree. (root, left, right)
+- In-order: Visit the left subtree, then the current node, then the right subtree. In a BST, the values ​​are returned in ascending order. (left, root, right)
+- Post-order: Visit the left subtree, then the right subtree, then the current node. (left, right, root)
+
+Complexity of all traversals: O(n) where n is the number of nodes.
